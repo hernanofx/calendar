@@ -4,32 +4,90 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/css/styles.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/home/hernan/proyectos/calendar/css/clock.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/home/hernan/proyectos/calendar/css/styles.css" media="screen" />
     <title>Calendar</title>
 </head>
 
 <body>
     <div class="" id="allapp">
-        <h1>contiene toda la ap</h1>
         <div class="" id="header">
-            <div class="" id="clock">
+            <div class="wrap" id="clock">
+                <div class="widget">
+                    <div class="fecha">
+                        <p id="diaSemana" class="diaSemana"></p>
+                        <p id="dia" class="dia"></p>
+                        <p>de </p>
+                        <p id="mes" class="mes"></p>
+                        <p>del </p>
+                        <p id="year" class="year"></p>
+                    </div>
+                    <div class="reloj">
+                        <p id="horas" class="horas"></p>
+                        <p>:</p>
+                        <p id="minutos" class="minutos"></p>
+                        <p>:</p>
+                        <div class="caja-segundos">
+                            <p id="ampm" class="ampm"></p>
+                            <p id="segundos" class="segundos"></p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="" id="buttons">
+                <button type="button" class="add" id="add">Agregar</button>
+                <button type="button" class="removeAll" id="removeAll">Borrar todo</button>
+                <button class="newEvent">Nuevo</button>
+                <button class="seeAll">Ver todos</button>
+                <button class="seeDateHour">Ver fecha</button>
             </div>
         </div>
         <div class="" id="middle">
             <div class="" id="inputs">
                 <div class="" id="to-do">
+                    <input type="text" id="inputEventT" placeholder="Evento">
+                    <input class="" type="datetime-local" id="startEvent" placeholder="Comienza">
+                    <input class="" type="datetime-local" id="endEvent" placeholder="Finaliza">
+                    <select name="options" id="categoryInputT">
+                        <option value="" disabled selected>Categoria</option>
+                        <option value="Bandas">Bandas</option>
+                        <option value="Deportes">Deporte</option>
+                        <option value="Personales">Personales</option>
+                        <option value="Sociales">Sociales</option>
+                        <option value="Trabajos">Trabajos</option>
+                        <option value="Tramites">Trámites</option>
+                    </select>
                 </div>
                 <div class="" id="reminder">
+                    <input type="text" id="inputEventR" placeholder="Evento">
+                    <input class="" type="datetime-local" id="startEvent" placeholder="Comienza">
+                    <input class="" type="datetime-local" id="endEvent" placeholder="Finaliza">
+                    <select name="options" id="categoryInputR">
+                        <option value="" disabled selected>Categoria</option>
+                        <option value="Bandas">Bandas</option>
+                        <option value="Deportes">Deporte</option>
+                        <option value="Personales">Personales</option>
+                        <option value="Sociales">Sociales</option>
+                        <option value="Trabajos">Trabajos</option>
+                        <option value="Tramites">Trámites</option>
+                    </select>
                 </div>
             </div>
             <div class="" id="database">
             </div>
             <div class="" id="viewoptions">
+                <div class="" id="viewoptionsbydate">
+                    <button class="hoy">Hoy</button>
+                    <button class="semana">Semana</button>
+                    <button class="mes2">Mes</button>
+                    <button class="proximos">Próximos</button>
+                </div>
             </div>
         </div>
     </div>
+    <script src="/home/hernan/proyectos/calendar/js/placeholder.js"></script>
+    <script src="/home/hernan/proyectos/calendar/js/clock.js"></script>
+
 </body>
 
 </html>
