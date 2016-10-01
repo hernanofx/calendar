@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/home/hernan/proyectos/calendar/css/clock.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/home/hernan/proyectos/calendar/css/styles.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../client/css/clock.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../client/css/styles.css" media="screen" />
     <title>Calendar</title>
 </head>
 
@@ -46,8 +46,8 @@
             <div class="" id="inputs">
                 <div class="" id="to-do">
                     <input type="text" id="inputEventT" placeholder="Evento">
-                    <input class="" type="datetime-local" id="startEvent" placeholder="Comienza">
-                    <input class="" type="datetime-local" id="endEvent" placeholder="Finaliza">
+                    <input class="" type="datetime-local" id="startEventT" placeholder="Comienza">
+                    <input class="" type="datetime-local" id="endEventT" placeholder="Finaliza">
                     <select name="options" id="categoryInputT">
                         <option value="" disabled selected>Categoria</option>
                         <option value="Bandas">Bandas</option>
@@ -60,8 +60,8 @@
                 </div>
                 <div class="" id="reminder">
                     <input type="text" id="inputEventR" placeholder="Evento">
-                    <input class="" type="datetime-local" id="startEvent" placeholder="Comienza">
-                    <input class="" type="datetime-local" id="endEvent" placeholder="Finaliza">
+                    <input class="" type="datetime-local" id="startEventR" placeholder="Comienza">
+                    <input class="" type="datetime-local" id="endEventR" placeholder="Finaliza">
                     <select name="options" id="categoryInputR">
                         <option value="" disabled selected>Categoria</option>
                         <option value="Bandas">Bandas</option>
@@ -77,16 +77,37 @@
             </div>
             <div class="" id="viewoptions">
                 <div class="" id="viewoptionsbydate">
-                    <button class="hoy">Hoy</button>
-                    <button class="semana">Semana</button>
-                    <button class="mes2">Mes</button>
-                    <button class="proximos">Próximos</button>
+                    <button class="today">Hoy</button>
+                    <button class="week">Semana</button>
+                    <button class="month">Mes</button>
+                    <button class="next">Próximos</button>
+                </div>
+                <div class="" id="viewtodolist">
+                    <ul class="" id="list">
                 </div>
             </div>
         </div>
+        <div class="">
+            <table class="">
+                <thead class="">
+                    <tr class="">
+                        <th class="">Comienza</th>
+                        <th class="">Finaliza</th>
+                        <th class="">Evento</th>
+                        <th class="">Categoria</th>
+                        <th class="">Log</th>
+                    </tr>
+                    <tbody class="">
+                        <!-- Aca se muestran los eventos-->
+                    </tbody>
+            </table>
+        </div>
     </div>
-    <script src="/home/hernan/proyectos/calendar/js/placeholder.js"></script>
-    <script src="/home/hernan/proyectos/calendar/js/clock.js"></script>
+    <script src="../client/js/jquery.js"></script>
+    <script src="../client/js/placeholder.js"></script>
+    <script src="../client/js/clock.js"></script>
+    <script src="../client/js/to-do.js"></script>
+    <script src="../client/js/agenda.js"></script>
 
 </body>
 
