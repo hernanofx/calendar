@@ -107,6 +107,37 @@ var diaDelMesF = new Date(enddate),
     mesesF = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'],
     fmesesF = mesesF[numeroMesF];
 
+// Agrego los 0 cuando me pone una sola cifra
+    if (hours < 10) {
+        hours = "0" + hours;
+    }
+    if (minutes < 10) {
+        minutes = "0" + minutes;
+    }
+    if (seconds < 10) {
+        seconds = "0" + seconds;
+    }
+
+    if (horas2 < 10) {
+        horas2 = "0" + horas2;
+    }
+    if (minutos2 < 10) {
+        minutos2 = "0" + minutos2;
+    }
+    if (segundos2 < 10) {
+        segundos2 = "0" + segundos2;
+    }
+
+    if (horasF2 < 10) {
+        horasF2 = "0" + horasF2;
+    }
+    if (minutosF2 < 10) {
+        minutosF2 = "0" + minutosF2;
+    }
+    if (segundosF2 < 10) {
+        segundosF2 = "0" + segundosF2;
+    };
+
 //  Se insertan los datos obtenidos en una tabla
 
 jQuery('tbody').append(`
