@@ -295,6 +295,21 @@ li {
     padding: 4px;
 }
 
+button.removeMe {
+    padding: 5px;
+    font-size: 13px;
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+button.removeMe {
+    background-color: #33B923;
+    color: #FFF
+}
+button.removeMe:hover {
+    background-color: #6FE162;
+}
+
 #database1 {
     top: 650px;
     bottom: px left: 42px;
