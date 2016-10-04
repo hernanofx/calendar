@@ -250,8 +250,62 @@
 
 /* Divs configuration */
 
-#header {
-	height: 30px;
+#clock {
+	position: relative;
+	top: 0px;
+	left: 10px;
+	right: 0;
+	height: 45px;
 	width: 380px;
-	margin: 1em auto;
+	margin: 0.2em auto;
+}
+
+#buttons {
+	position: absolute;
+	top: 31px;
+	left: 430px;
+	right: 0px;
+	height: px;
+	width: px;
+	margin: 0.2em auto;
+}
+
+#viewoptionsbydate {
+	position: absolute;
+	top: 100px;
+	left: 430px;
+	right: 0px;
+	height: px;
+	width: px;
+	margin: 0.2em auto;
+}
+
+#to-do {
+	position: absolute;
+	top: 185px;
+	left: 42px;
+	right: 0px;
+	height: px;
+	width: px;
+	margin: 0.2em auto;
+}
+
+#reminder {
+	position: absolute;
+	top: 210px;
+	left: 42px;
+	right: 0px;
+	height: px;
+	width: px;
+	margin: 0.2em auto;
+}
+
+#list {
+	position: absolute;
+	top: 185px;
+	left: 800px;
+	right: px;
+	height: px;
+	width: px;
+	margin: 0.2em auto;
 }
