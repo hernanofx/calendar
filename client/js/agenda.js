@@ -141,7 +141,7 @@ var diaDelMesF = new Date(enddate),
 //  Se insertan los datos obtenidos en una tabla
 
 jQuery('tbody').append(`
-<tr class ="">
+<tr class ="database1" id="database1">
 
         <td class="">
         <div class="">${fdiaDelMes} </div>
