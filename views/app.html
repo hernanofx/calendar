@@ -47,9 +47,9 @@
             <div class="" id="inputs">
                 <div class="" id="to-do">
                     <input class="inputEventT" type="text" id="inputEventT" placeholder="Evento Tarea">
-                    <input class="startEventT" type="datetime-local" id="startEventT" placeholder="Comienza">
-                    <input class="endEventT" type="datetime-local" id="endEventT" placeholder="Finaliza">
-                    <select class="categoryInputT" name="options" id="categoryInputT">
+                    <input class="startEventT" type="datetime-local" id="startEventT" style="width:13%" placeholder="Comienza">
+                    <input class="endEventT" type="datetime-local" id="endEventT" style="width:13%" placeholder="Finaliza">
+                    <select class="categoryInputT" name="options" id="categoryInputT" style="width:6.5%">
                         <option value="" disabled selected>Categoria</option>
                         <option value="Bandas">Bandas</option>
                         <option value="Deportes">Deporte</option>
@@ -60,10 +60,10 @@
                     </select>
                 </div>
                 <div class="" id="reminder">
-                    <input class="inputEventR"type="text" id="inputEventR" placeholder="Evento Recordatorio">
-                    <input class="startEventR" type="datetime-local" id="startEventR" placeholder="Comienza">
-                    <input class="endEventR" type="datetime-local" id="endEventR" placeholder="Finaliza">
-                    <select class="categoryInputR"name="options" id="categoryInputR">
+                    <input class="inputEventR" type="text" id="inputEventR" placeholder="Evento Recordatorio">
+                    <input class="startEventR" type="datetime-local" id="startEventR" style="width:13%" placeholder="Comienza">
+                    <input class="endEventR" type="datetime-local" id="endEventR" style="width:13%" placeholder="Finaliza">
+                    <select class="categoryInputR" name="options" id="categoryInputR" style="width:6.5%">
                         <option value="" disabled selected>Categoria</option>
                         <option value="Bandas">Bandas</option>
                         <option value="Deportes">Deporte</option>
@@ -89,20 +89,18 @@
                 </div>
             </div>
         </div>
-        <div class="table1">
-            <table class="">
-                <thead class="">
-                    <tr class="database1" id="database1">
-                        <th class="">Comienza</th>
-                        <th class="">Finaliza</th>
-                        <th class="">Evento</th>
-                        <th class="">Categoria</th>
-                        <th class="">Log</th>
-                    </tr>
-                    <tbody class="">
-                        <!-- Aca se muestran los eventos-->
-                    </tbody>
-            </table>
+        <div>
+          <table class="flat-table flat-table-1">
+            <th> Comienza</th>
+            <th> Finaliza</th>
+            <th> Evento</th>
+            <th> Categoria</th>
+            <th> Log</th>
+
+          </table>
+            <tbody class="">
+                <!-- Aca se muestran los eventos de la funcion addEventToAgenda-->
+            </tbody>
         </div>
     </div>
     <script src="../client/js/jquery.js"></script>

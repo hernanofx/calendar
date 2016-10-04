@@ -51,63 +51,63 @@ const EVENTS = [{
 
 
 //Función y variables de la fecha de carga  / de comienzo / finalizacion del evento
-function addEventToAgenda(description, dueDate, category, startdate, enddate ) {
-var dayOfMonth = dueDate.getDate(),
-    monthNumber =  dueDate.getMonth(),
-    year = dueDate.getFullYear(),
-    dayOfWeek = dueDate.getDay(),
-    hours = dueDate.getHours(),
-    minutes = dueDate.getMinutes(),
-    seconds = dueDate.getSeconds(),
-    week = ['Domingo','Lunes','Martes','Miercoles','Jueves','Viernes','Sabado'],
-    pdayOfWeek = week[dayOfWeek],
-    pdayOfMonth = dayOfMonth,
-    month = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'],
-    pMonth = month[monthNumber];
+function addEventToAgenda(description, dueDate, category, startdate, enddate) {
+    var dayOfMonth = dueDate.getDate(),
+        monthNumber = dueDate.getMonth(),
+        year = dueDate.getFullYear(),
+        dayOfWeek = dueDate.getDay(),
+        hours = dueDate.getHours(),
+        minutes = dueDate.getMinutes(),
+        seconds = dueDate.getSeconds(),
+        week = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'],
+        pdayOfWeek = week[dayOfWeek],
+        pdayOfMonth = dayOfMonth,
+        month = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+        pMonth = month[monthNumber];
 
-// Variables de la hora del comienzo del evento
-var diaDelMes = new Date(startdate),
-    diaDelMes2 = diaDelMes.getUTCDate(),
-    numeroMes =  new Date(startdate),
-    numeroMes = numeroMes.getUTCMonth(),
-    año = new Date(startdate),
-    año2 = año.getUTCFullYear(),
-    diaDeSemana = new Date(startdate),
-    diaDeSemana2 = diaDeSemana.getUTCDay(),
-    horas = new Date(startdate),
-    horas2 = horas.getUTCHours(),
-    minutos = new Date(startdate),
-    minutos2 = minutos.getUTCMinutes(),
-    segundos = new Date(startdate),
-    segundos2 = segundos.getUTCSeconds(),
-    semana = ['Domingo','Lunes','Martes','Miercoles','Jueves','Viernes','Sabado'],
-    fdiasDeSemana = semana[diaDeSemana2],
-    fdiaDelMes = diaDelMes2,
-    meses = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'],
-    fmeses = meses[numeroMes];
+    // Variables de la hora del comienzo del evento
+    var diaDelMes = new Date(startdate),
+        diaDelMes2 = diaDelMes.getUTCDate(),
+        numeroMes = new Date(startdate),
+        numeroMes = numeroMes.getUTCMonth(),
+        año = new Date(startdate),
+        año2 = año.getUTCFullYear(),
+        diaDeSemana = new Date(startdate),
+        diaDeSemana2 = diaDeSemana.getUTCDay(),
+        horas = new Date(startdate),
+        horas2 = horas.getUTCHours(),
+        minutos = new Date(startdate),
+        minutos2 = minutos.getUTCMinutes(),
+        segundos = new Date(startdate),
+        segundos2 = segundos.getUTCSeconds(),
+        semana = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'],
+        fdiasDeSemana = semana[diaDeSemana2],
+        fdiaDelMes = diaDelMes2,
+        meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+        fmeses = meses[numeroMes];
 
-// Variables de la hora de finalización del evento
-var diaDelMesF = new Date(enddate),
-    diaDelMesF2 = diaDelMesF.getUTCDate(),
-    numeroMesF =  new Date(enddate),
-    numeroMesF = numeroMesF.getUTCMonth(),
-    añoF = new Date(enddate),
-    añoF2 = añoF.getUTCFullYear(),
-    diaDeSemanaF = new Date(enddate),
-    diaDeSemanaF2 = diaDeSemanaF.getUTCDay(),
-    horasF = new Date(enddate),
-    horasF2 = horasF.getUTCHours(),
-    minutosF = new Date(enddate),
-    minutosF2 = minutosF.getUTCMinutes(),
-    segundosF = new Date(enddate),
-    segundosF2 = segundosF.getUTCSeconds(),
-    semanaF = ['Domingo','Lunes','Martes','Miercoles','Jueves','Viernes','Sabado'],
-    fdiasDeSemanaF = semanaF[diaDeSemanaF2],
-    fdiaDelMesF = diaDelMesF2,
-    mesesF = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'],
-    fmesesF = mesesF[numeroMesF];
+    // Variables de la hora de finalización del evento
+    var diaDelMesF = new Date(enddate),
+        diaDelMesF2 = diaDelMesF.getUTCDate(),
+        numeroMesF = new Date(enddate),
+        numeroMesF = numeroMesF.getUTCMonth(),
+        añoF = new Date(enddate),
+        añoF2 = añoF.getUTCFullYear(),
+        diaDeSemanaF = new Date(enddate),
+        diaDeSemanaF2 = diaDeSemanaF.getUTCDay(),
+        horasF = new Date(enddate),
+        horasF2 = horasF.getUTCHours(),
+        minutosF = new Date(enddate),
+        minutosF2 = minutosF.getUTCMinutes(),
+        segundosF = new Date(enddate),
+        segundosF2 = segundosF.getUTCSeconds(),
+        semanaF = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'],
+        fdiasDeSemanaF = semanaF[diaDeSemanaF2],
+        fdiaDelMesF = diaDelMesF2,
+        mesesF = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+        fmesesF = mesesF[numeroMesF];
 
-// Agrego los 0 cuando me pone una sola cifra
+    // Agrego los 0 cuando me pone una sola cifra
     if (hours < 10) {
         hours = "0" + hours;
     }
@@ -138,11 +138,11 @@ var diaDelMesF = new Date(enddate),
         segundosF2 = "0" + segundosF2;
     };
 
-//  Se insertan los datos obtenidos en una tabla
+    //  Se insertan los datos obtenidos en una tabla
 
-jQuery('tbody').append(`
-<tr class ="database1" id="database1">
+    jQuery('tbody').append(`
 
+    <tr>
         <td class="">
         <div class="">${fdiaDelMes} </div>
         <div class="">${fdiasDeSemana},${horas2}:${minutos2}</div>
@@ -173,8 +173,7 @@ jQuery('tbody').append(`
         <div class="">${pdayOfWeek},${hours}:${minutes}:${seconds}</div>
         <div class="">${pMonth}, ${year}</div>
         </td>
-
-</tr>
+  </tr>
 
 `);
 }
@@ -182,19 +181,19 @@ jQuery('tbody').append(`
 // Sacamos los valores de los inputs y los agregamos a la función addEventToAgenda
 
 jQuery('#add').on('click', function() {
-var value_event = jQuery('#inputEventT').val();
-var value_category = jQuery('#categoryInputT').val();
-var value_startDate = jQuery('#startEventT').val();
-var value_endDate = jQuery('#endEventT').val();
+    var value_event = jQuery('#inputEventT').val();
+    var value_category = jQuery('#categoryInputT').val();
+    var value_startDate = jQuery('#startEventT').val();
+    var value_endDate = jQuery('#endEventT').val();
 
 
-addEventToAgenda(value_event, new Date ( ), value_category, value_startDate, value_endDate);
+    addEventToAgenda(value_event, new Date(), value_category, value_startDate, value_endDate);
 });
 
 
 EVENTS.forEach(function(event) {
 
-var d = new Date(event.dueDate);
-addEventToAgenda(event.title, d, event.category, event.startdate, event.enddate);
+    var d = new Date(event.dueDate);
+    addEventToAgenda(event.title, d, event.category, event.startdate, event.enddate);
 
 });
